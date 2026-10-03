@@ -1,0 +1,78 @@
+.summary-grid{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 1rem;
+}
+
+@media (max-width: 576px) {
+    .summary-grid {
+        grid-template-columns: 1fr;
+    }
+}
+.table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.table th,
+.table td {
+    padding: 12px 8px;
+}
+
+.table th:nth-child(1),
+.table td:nth-child(1) {
+    width: 25%;
+}
+
+.table th:nth-child(2),
+.table td:nth-child(2) {
+    width: 10%;
+}
+
+.table th:nth-child(3),
+.table td:nth-child(3) {
+    width: 15%;
+}
+
+.table th:nth-child(4),
+.table td:nth-child(4) {
+    width: 20%;
+}
+
+.table th:nth-child(5){
+    width: 15%;
+}
+.dark-mode .mainContant{
+     background-color: #343a40;
+    color: white;
+}
+ .dark-mode .card {
+    background-color: #343a40;
+    color: white;
+    border-color: #495057;
+}
+
+.dark-mode .table {
+    --bs-table-bg: #343a40;
+    --bs-table-color: white;
+    --bs-table-striped-bg: #3d444a;
+    --bs-table-striped-color: white;
+    color: white;
+}
+.dark-mode .form-control,
+.dark-mode .form-select {
+    background-color: #343a40;
+    color: white;
+    border-color: #6c757d;
+}
+ .dark-mode .form-control::placeholder {
+    color: #adb5bd;
+}
+ .dark-mode form {
+    background-color: #343a40;
+    color: white;
+    border-color: #6c757d !important;
+}
+#expensesChart {
+    max-height: 150px;
+}
